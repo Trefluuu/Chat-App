@@ -23,6 +23,10 @@ class RegisterActivity : AppCompatActivity() {
             peformSignUp()
         }
 
+        signIn_textView_register.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
 
         btnSelectPhoto_register.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK)

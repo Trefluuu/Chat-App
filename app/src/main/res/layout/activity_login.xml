@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/email_editText_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/border"
+        android:ems="18"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/title_textViiew_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/title_textViiew_login"
+        app:layout_constraintTop_toBottomOf="@+id/title_textViiew_login" />
+
+    <Button
+        android:id="@+id/btnLogin_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/border_button"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/forgotPassword_textView_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/forgotPassword_textView_login"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPassword_textView_login" />
+
+    <TextView
+        android:id="@+id/backToSignUp_textView_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:text="Back to sign up"
+        android:textAlignment="center"
+        android:textColor="@color/haveAnAccount"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/password_editText_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin_login"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin_login" />
+
+    <TextView
+        android:id="@+id/forgotPassword_textView_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Forgot password"
+        android:textColor="@color/haveAnAccount"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/password_editText_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password_editText_login"
+        app:layout_constraintTop_toBottomOf="@+id/password_editText_login" />
+
+    <EditText
+        android:id="@+id/password_editText_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border"
+        android:ems="18"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/email_editText_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_editText_login"
+        app:layout_constraintTop_toBottomOf="@+id/email_editText_login" />
+
+    <TextView
+        android:id="@+id/title_textViiew_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center_horizontal"
+        android:text="ChatApp"
+        android:textAlignment="center"
+        android:textColor="@color/title"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
